@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 19-Feb-2024, 1:11:59 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="in.co.rays.userdto.UserDTO" table="USER">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="increment" />
+        </id>
+        <property name="F_Name" type="java.lang.String">
+            <column name="F_NAME" />
+        </property>
+        <property name="L_Name" type="java.lang.String">
+            <column name="L_NAME" />
+        </property>
+        <property name="login" type="java.lang.String">
+            <column name="LOGIN" />
+        </property>
+        <property name="pass" type="java.lang.String">
+            <column name="PASS" />
+        </property>
+        <property name="dob" type="java.util.Date">
+            <column name="DOB" />
+        </property>
+        <property name="address" type="java.lang.String">
+            <column name="ADDRESS" />
+        </property>
+    </class>
+</hibernate-mapping>
